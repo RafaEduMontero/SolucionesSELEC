@@ -1,0 +1,146 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+section img{
+  width: 100%;
+}
+
+nav a {
+  left: 0;
+}
+nav a img{
+  width: 100%;
+  padding-top: 0.5rem;
+}
+nav ul a,
+nav .brand-logo {
+  color: #444;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.sidenav-trigger {
+  color: #26a69a;
+}
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+
+  @media only screen and (min-width : 993px) {
+    .parallax-container .section {
+      position: absolute;
+      top: 40%;
+    }
+    .contenedor{
+      height: 790px !important;
+    }
+    #index-banner .section {
+      top: 10%;
+    }
+    img{
+      width: 30%;
+    }
+    .menor img{
+      width: 20%;
+    }
+    .menor2 img{
+      width: 25%;
+    }
+  }
+
+  @media only screen and (max-width : 1200px) {
+    .parallax-container .section {
+      position: absolute;
+      top: 40%;
+    }
+    #index-banner .section {
+      top: 10%;
+    }
+    img{
+      width: 50%;
+    }
+    .menor img{
+      width: 30%;
+    }
+    .menor2 img{
+      width: 45%;
+    }
+  }
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+  img{
+    width: 50%;
+  }
+  .menor img{
+    width: 30%;
+  }
+  .menor2 img{
+    width: 45%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+  .contenedor img{
+    height: 300px;
+  }
+  img{
+    width: 25%;
+  }
+  .contenedor{
+    height: 300px !important;
+  }
+  nav a img{
+    width: 90%;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  .sidenav img{
+    width: 50%;
+  }
+  .carousel img{
+    height: 100vh;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
+
+.form{
+  border: #a81d2f;
+}
+
+.nosotros{
+  padding-top: 1rem;
+}
