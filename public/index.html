@@ -2,14 +2,13 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="icon" href="%PUBLIC_URL%/icon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
       content="Web site created using create-react-app"
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -43,7 +42,6 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script>
@@ -58,51 +56,11 @@
     });
     </script>
     <script>
-      $(document).ready(function(){
-      $('.parallax1').parallax();
-    });
-    </script>
-    <script>
-      $(document).ready(function(){
-      $('.parallax2').parallax();
-    });
-    </script>
-    <script>
-      $(document).ready(function(){
-        $('.carousel.carousel-slider').carousel({fullWidth: true,
-        indicators: true,
-        duration: 100
-        
-      });
-        // Next slide
-$('.carousel').carousel('next');
-$('.carousel').carousel('next', 1); // Move next n times.
-
-// Previous slide
-$('.carousel').carousel('prev');
-$('.carousel').carousel('prev', 1); // Move prev n times.
-
-// Set to nth slide
-$('.carousel').carousel('set', 500);
-    });
-    </script>
-    <script>
       var options={}
      document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.slider');
     var instances = M.Slider.init(elems, options);
   });
     </script>
-    <script>
-       var options = [
-    {selector: '#staggered-test', offset: 200, callback: customCallbackFunc },
-    {selector: '.other-class', offset: 200, callback: function() {
-      customCallbackFunc();
-    } },
-  ];
-  Materialize.scrollFire(options);
-    </script>
-    <script src="/src/js/materialize.js"></script>
-    <script src="/src/js/init.js"></script>
   </body>
 </html>

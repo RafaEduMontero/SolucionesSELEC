@@ -4,6 +4,8 @@ import { useForm } from "react-hook-form";
 import preferences from '../preferences/Preferences';
 import functions from '../functions/Functions';
 import FormularioPresupuesto from '../atomics/FormularioPresupuesto';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const FormPresupuesto = () => {
     const { register, handleSubmit, formState: { errors } } = useForm(); 
@@ -24,11 +26,15 @@ const FormPresupuesto = () => {
             console.log(params.get('payment_id'));
             sendMail(paymentId,history)
         }
+    }, [])
+    useEffect(() => {
+        Aos.init();
     }, []) 
     return (
-        <div className="container">
+        <div className="container form" data-aos="zoom-in" data-aos-offset="200"
+        data-aos-duration="1500">
             <h1>Presupuesto</h1>   
-            <form className="form container">
+            <form className="container">
                 <FormularioPresupuesto register={register} errors={errors}/>
             </form>
             <button onClick={handleSubmit(pagarPresupuesto)} className="btn gren">Presupuesto</button>

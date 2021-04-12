@@ -137,10 +137,14 @@ footer.page-footer {
   margin: 0;
 }
 
-.form{
-  border: #a81d2f;
+.form {
+  padding-bottom: 1rem;
 }
 
 .nosotros{
   padding-top: 1rem;
+}
+
+.pb{
+  padding-bottom: 1rem;
 }

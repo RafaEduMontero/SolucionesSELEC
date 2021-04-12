@@ -1,6 +1,5 @@
 import './App.css';
 import Routes from './routes/Routes';
-import '../src/css/materialize.css';
 import '../src/css/style.css'
 
 function App() {
