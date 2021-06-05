@@ -1,7 +1,7 @@
 import Axios from 'axios';
 import mercadoPago from '../paths/MercadoPago';
 import * as emailjs from 'emailjs-com';
-import { useHistory} from 'react-router-dom';
+
 const functions = {
     armarDatosEmail : (datos,data) =>{
         const datos1 = {...datos,
